@@ -14,15 +14,13 @@ function Login({ setIsAuthenticated }) {
     e.preventDefault()
     setError('')
 
-    // Simple validation
     if (!formData.email || !formData.password) {
       setError('Please fill in all fields')
       return
     }
 
-    // For demo purposes - any non-empty input will work
     setIsAuthenticated(true)
-    navigate('/home') // Redirect to home page after login
+    navigate('/home') 
   }
 
   return (
